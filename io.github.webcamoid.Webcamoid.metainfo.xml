@@ -75,6 +75,7 @@
     </screenshots>
     <update_contact>hipersayan.x_AT_gmail_com</update_contact>
     <releases>
+        <release version="9.1.0" date="2023-06-10" />
         <release version="9.0.0" date="2022-02-15" />
         <release version="8.8.0" date="2021-02-16" />
         <release version="8.7.1" date="2019-10-22" />
