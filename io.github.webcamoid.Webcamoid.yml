@@ -20,6 +20,7 @@ modules:
     buildsystem: cmake-ninja
     config-opts:
       - -DCMAKE_BUILD_TYPE=Release
+      - -DWITH_FLATPAK_VCAM=OFF
     post-install:
       - install -Dm644 io.github.webcamoid.Webcamoid.metainfo.xml -t $FLATPAK_DEST/share/metainfo
     sources:
