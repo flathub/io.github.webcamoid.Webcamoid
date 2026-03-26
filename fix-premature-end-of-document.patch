@@ -1,0 +1,26 @@
+From 3f7d17fa535a9f66608e6c26ab06f74f86d67e59 Mon Sep 17 00:00:00 2001
+From: Sabri Ünal <yakushabb@gmail.com>
+Date: Thu, 26 Mar 2026 19:00:36 +0300
+Subject: [PATCH] Fix zh_TW.ts:4369:35: Premature end of document
+
+---
+ StandAlone/Translations/CMakeLists.txt | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+
+diff --git a/StandAlone/Translations/CMakeLists.txt b/StandAlone/Translations/CMakeLists.txt
+index cbda059..37adc67 100644
+--- a/StandAlone/Translations/CMakeLists.txt
++++ b/StandAlone/Translations/CMakeLists.txt
+@@ -48,8 +48,7 @@ set(LANGUAGES
+     tr
+     uk
+     vi
+-    zh_CN
+-    zh_TW)
++    zh_CN)
+ 
+ # Update translations.
+ 
+--
+libgit2 1.7.2
+

@@ -25,4 +25,6 @@ modules:
         url: https://github.com/webcamoid/webcamoid.git
         tag: 9.3.0
       - type: patch
-        path: fix-appdata.patch
+        paths:
+          - fix-premature-end-of-document.patch
+          - fix-appdata.patch
