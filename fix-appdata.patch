@@ -1,0 +1,91 @@
+From 98ebaad68817f65cf69d8775348a62b46537ffbf Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Sabri=20=C3=9Cnal?= <yakushabb@gmail.com>
+Date: Wed, 25 Mar 2026 20:49:19 +0300
+Subject: [PATCH] Fix appdata paper cuts
+
+---
+ io.github.webcamoid.Webcamoid.metainfo.xml | 31 +++++++++++++++-------
+ webcamoid.desktop                          |  2 +-
+ 2 files changed, 23 insertions(+), 10 deletions(-)
+
+diff --git a/io.github.webcamoid.Webcamoid.metainfo.xml b/io.github.webcamoid.Webcamoid.metainfo.xml
+index 4b91961..6560fb8 100644
+--- a/io.github.webcamoid.Webcamoid.metainfo.xml
++++ b/io.github.webcamoid.Webcamoid.metainfo.xml
+@@ -1,5 +1,5 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+-<component type="desktop">
++<component type="desktop-application">
+     <id>io.github.webcamoid.Webcamoid</id>
+     <name>Webcamoid</name>
+     <summary>Take photos and record videos with your webcam</summary>
+@@ -17,7 +17,9 @@
+     <summary xml:lang="zh_CN">拍摄照片和录制视频与您的摄像头</summary>
+     <summary xml:lang="zh_TW">拍攝照片和錄製視頻與您的攝像頭</summary>
+     <launchable type="desktop-id">webcamoid.desktop</launchable>
+-    <developer_name>Gonzalo Exequiel Pedone</developer_name>
++    <developer id="io.github.webcamoid">
++        <name>Gonzalo Exequiel Pedone</name>
++    </developer>
+     <description>
+         <p>
+             Webcamoid is a full featured and multiplatform webcam suite.
+@@ -37,18 +39,13 @@
+             <li>Virtual webcam support for feeding other programs</li>
+         </ul>
+     </description>
+-    <keywords>
+-        <keyword>webcam</keyword>
+-        <keyword>desktop</keyword>
+-        <keyword>record</keyword>
+-        <keyword>capture</keyword>
+-    </keywords>
+     <metadata_license>CC0-1.0</metadata_license>
+     <project_license>GPL-3.0-or-later</project_license>
++    <url type="homepage">https://webcamoid.github.io</url>
+     <url type="bugtracker">https://github.com/webcamoid/webcamoid/issues</url>
+     <url type="donation">https://webcamoid.github.io/donations</url>
+     <url type="help">https://github.com/webcamoid/webcamoid/wiki</url>
+-    <url type="homepage">https://webcamoid.github.io/</url>
++    <url type="vcs-browser">https://github.com/webcamoid/webcamoid</url>
+     <translation type="qt">Webcamoid</translation>
+     <project_group>none</project_group>
+     <screenshots>
+@@ -74,5 +71,21 @@
+         </screenshot>
+     </screenshots>
+     <update_contact>hipersayan.x_AT_gmail_com</update_contact>
++    <releases>
++        <release version="9.3.0" date="2027-07-28" />
++        <release version="9.2.3" date="2024-10-02" />
++        <release version="9.2.2" date="2024-10-02" />
++        <release version="9.2.1" date="2024-10-02" />
++        <release version="9.2.0" date="2024-10-01" />
++        <release version="9.1.1" date="2023-06-14" />
++        <release version="9.1.0" date="2023-06-10" />
++        <release version="9.0.0" date="2022-02-15" />
++        <release version="8.8.0" date="2021-02-16" />
++        <release version="8.7.1" date="2019-10-22" />
++        <release version="8.7.0" date="2019-10-01" />
++        <release version="8.6.1" date="2019-03-26" />
++        <release version="8.6.0" date="2019-03-20" />
++        <release version="8.5.0" date="2019-01-22" />
++    </releases>
+     <content_rating type="oars-1.1" />
+ </component>
+diff --git a/webcamoid.desktop b/webcamoid.desktop
+index b40f1da..18cfd5d 100644
+--- a/webcamoid.desktop
++++ b/webcamoid.desktop
+@@ -30,7 +30,7 @@ Comment[pt]=Tirar fotos e gravar vídeos com sua webcam
+ Comment[ru]=Снимайте фотографии и записывайте видео с веб-камеры
+ Comment[zh_CN]=拍摄照片和录制视频与您的摄像头
+ Comment[zh_TW]=拍攝照片和錄製視頻與您的攝像頭
+-Keywords=photo;video;webcam;
++Keywords=photo;video;webcam;desktop;record;capture;
+ Exec=webcamoid
+ Icon=webcamoid
+ Terminal=false
+-- 
+2.53.0
+
