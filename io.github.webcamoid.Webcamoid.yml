@@ -24,6 +24,7 @@ modules:
       - type: git
         url: https://github.com/webcamoid/webcamoid.git
         tag: 9.3.0
+        commit: 171b91e378c9bfbd4c425415322971e4e8872108
       - type: patch
         paths:
           - fix-premature-end-of-document.patch
