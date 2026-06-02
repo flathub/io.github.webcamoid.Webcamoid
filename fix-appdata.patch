@@ -3,6 +3,8 @@ From: =?UTF-8?q?Sabri=20=C3=9Cnal?= <yakushabb@gmail.com>
 Date: Wed, 25 Mar 2026 20:49:19 +0300
 Subject: [PATCH] Fix appdata paper cuts
 
+Fix appdata paper cuts
+
 ---
  io.github.webcamoid.Webcamoid.metainfo.xml | 31 +++++++++++++++-------
  webcamoid.desktop                          |  2 +-
