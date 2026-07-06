@@ -11,13 +11,13 @@ diff --git a/StandAlone/Translations/CMakeLists.txt b/StandAlone/Translations/CM
 index cbda059..37adc67 100644
 --- a/StandAlone/Translations/CMakeLists.txt
 +++ b/StandAlone/Translations/CMakeLists.txt
-@@ -48,8 +48,7 @@ set(LANGUAGES
-     tr
-     uk
+@@ -87,8 +87,7 @@ set(LANGUAGES
+     uz
      vi
--    zh_CN
+     zh_CN
+-    zh_HK
 -    zh_TW)
-+    zh_CN)
++    zh_HK)
  
  # Update translations.
  
