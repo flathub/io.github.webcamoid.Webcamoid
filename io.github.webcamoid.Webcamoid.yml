@@ -28,4 +28,3 @@ modules:
       - type: patch
         paths:
           - fix-premature-end-of-document.patch
-          - fix-appdata.patch
